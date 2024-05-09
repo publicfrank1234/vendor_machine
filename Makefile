@@ -27,7 +27,7 @@ docker-test: ## Run tests inside Docker container
 	docker run --rm vendor_machine_xyz pytest -vv -s
 
 run-local: ## Run the application locally
-	. venv/bin/activate; python app/main.py
+	. venv/bin/activate; python -m app.main
 
 .PHONY: help 
 help: ## Help message
